@@ -106,7 +106,7 @@ sudo chwon [user] /usr/local/bin/protoc
 sudo chwon -R [user] /usr/local/include/google
 ```
 
-## Protobuf Compilation
+## Protobuf compilation
 ```
 # From (3)/research
 protoc object_detection/protos/*.proto --python_out=.
@@ -176,6 +176,14 @@ PYTHONPATH=$PYTHONPATH:`pwd`:`pwd`/slim python train.py --logtostderr --train_di
 
 ## Test your trained model:
 > After training, frozen inference graph will be created in `(3)/research/object_detection/inference_graph` folder. You can test it by running the object_detection_image.py (or video or webcam) script.
+
+* Make sure you have been completed follow steps:
+    - Install tf
+    - Install python libraries for tf object detector building
+    - COCO API installation
+    - Protobuf compilation 
+    - Trained graph `frozen_inference_graph.pb` file
+    - Label map `labelmap.pbtxt` file
 
 
 
