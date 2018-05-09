@@ -24,11 +24,11 @@ sudo apt-get install python-pip python-dev python-virtualenv
 ```
 #Tensorflow
 export TF_CPP_MIN_LOG_LEVEL=2 
-export TF_ROOT="targetDirectory"
+export TF_ROOT="/Volumes/Soft/_Program_Files/tensorflow"
 alias tensorflow="$TF_ROOT/bin/python"
 alias tensorflow.setup="virtualenv --system-site-packages $TF_ROOT && tensorflow.active && pip install --upgrade tensorflow"
 alias tensorflow.destroy="rm -rf $TF_ROOT"
-alias tensorflow.active="A=`pwd` && cd $TF_ROOT && source ./bin/activate && cd $A"
+alias tensorflow.active="source $TF_ROOT/bin/activate"
 alias tensorboard="$TF_ROOT/bin/tensorboard"
 alias tensorboard.log="$TF_ROOT/bin/tensorboard --logdir=./logs"
 ```
