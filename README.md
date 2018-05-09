@@ -171,7 +171,7 @@ jupyter notebook object_detection/object_detection_tutorial.ipynb
 
 ```
 # From (3)/research/object_detection
-PYTHONPATH=$PYTHONPATH:`pwd`:`pwd`/slim python train.py --logtostderr --train_dir=training/ --pipeline_config_path=training/faster_rcnn_inception_v2_pets.config
+python train.py --logtostderr --train_dir=training/ --pipeline_config_path=training/faster_rcnn_inception_v2_pets.config
 ```
 
 ## Test your trained model:
