@@ -174,6 +174,9 @@ jupyter notebook object_detection/object_detection_tutorial.ipynb
 PYTHONPATH=$PYTHONPATH:`pwd`:`pwd`/slim python train.py --logtostderr --train_dir=training/ --pipeline_config_path=training/faster_rcnn_inception_v2_pets.config
 ```
 
+## Test your trained model:
+> After training, frozen inference graph will be created in `(3)/research/object_detection/inference_graph` folder. You can test it by running the Object_detection_image.py (or video or webcam) script.
+
 
 
 ### Refs: 
