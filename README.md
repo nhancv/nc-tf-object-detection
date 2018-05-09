@@ -175,7 +175,7 @@ PYTHONPATH=$PYTHONPATH:`pwd`:`pwd`/slim python train.py --logtostderr --train_di
 ```
 
 ## Test your trained model:
-> After training, frozen inference graph will be created in `(3)/research/object_detection/inference_graph` folder. You can test it by running the Object_detection_image.py (or video or webcam) script.
+> After training, frozen inference graph will be created in `(3)/research/object_detection/inference_graph` folder. You can test it by running the object_detection_image.py (or video or webcam) script.
 
 
 
