@@ -120,7 +120,7 @@ jupyter notebook object_detection/object_detection_tutorial.ipynb
 
 ## Configure your own object detector
   1. Gather data
-      - Gather Pictures: can use your phone or goolge search to collect at least 200 pics (jpg format) overall. The picture size should be less than 200KB each and resolution <= 720x1280
+      - Gather Pictures: can use your phone or goolge search to collect at least 200 pics (jpg format) overall, 40 pictures for each class. The picture size should be less than 200KB each and resolution <= 720x1280
       - Split 20% pics for testing (put them to the (3)/research/object_detection/images/test) and the others for training (put them to the (3)/research/object_detection/images/test).
       - Label Pictures: using https://github.com/tzutalin/labelImg. Once image is labeled and saved, one .xml file will be generated for each in the /test and /train directories. This will take a while! =]]
 
