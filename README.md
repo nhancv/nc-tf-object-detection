@@ -76,6 +76,7 @@ pip install pillow
 pip install lxml
 pip install jupyter
 pip install matplotlib
+pip install opencv-python
 ```
 
 ## COCO API installation
@@ -174,7 +175,15 @@ jupyter notebook object_detection/object_detection_tutorial.ipynb
 python train.py --logtostderr --train_dir=training/ --pipeline_config_path=training/faster_rcnn_inception_v2_pets.config
 ```
 
-## Test your trained model:
+## Export Inference graph
+Generate the frozen inference graph (.pb file). From the (3)/research/object_detection folder, issue the following command, where `XXXX` in `model.ckpt-XXXX` should be replaced with the `highest-numbered .ckpt` file in the `training` folder:
+
+```
+python export_inference_graph.py --input_type image_tensor --pipeline_config_path training/faster_rcnn_inception_v2_pets.config --trained_checkpoint_prefix training/model.ckpt-XXXX --output_directory inference_graph
+```
+This creates a frozen_inference_graph.pb file in the (3)/research/object_detection/inference_graph folder. The .pb file contains the object detection classifier.
+
+## Test your trained model
 > After training, frozen inference graph will be created in `(3)/research/object_detection/inference_graph` folder. You can test it by running the object_detection_image.py (or video or webcam) script.
 
 * Make sure you have been completed follow steps:
