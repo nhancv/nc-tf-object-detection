@@ -194,7 +194,8 @@ This creates a frozen_inference_graph.pb file in the (3)/research/object_detecti
     - Trained graph `frozen_inference_graph.pb` file
     - Label map `labelmap.pbtxt` file
 
-
+## Other trained models
+https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md
 
 ### Refs: 
 1. https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/installation.md
