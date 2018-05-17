@@ -186,6 +186,14 @@ This creates a frozen_inference_graph.pb file in the (3)/research/object_detecti
 ## Test your trained model
 > After training, frozen inference graph will be created in `(3)/research/object_detection/inference_graph` folder. You can test it by running the object_detection_image.py (or video or webcam) script.
 
+Ex:
+```
+# From (3)/research
+export PYTHONPATH=$PYTHONPATH:`pwd`:`pwd`/slim
+cd object_detection
+python object_detection_image.py
+```
+
 * Make sure you have been completed follow steps:
     - Install tf
     - Install python libraries for tf object detector building
