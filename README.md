@@ -199,8 +199,8 @@ python object_detection_image.py
     - Install python libraries for tf object detector building
     - COCO API installation
     - Protobuf compilation 
-    - Trained graph `frozen_inference_graph.pb` file
-    - Label map `labelmap.pbtxt` file
+    - Trained graph `(3)/research/object_detection/inference_graph/frozen_inference_graph.pb` file
+    - Label map `(3)/research/object_detection/training/labelmap.pbtxt` file
 
 ## Other trained models
 https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md
