@@ -32,6 +32,9 @@ alias tensorflow.active="source $TF_ROOT/bin/activate"
 alias tensorboard="$TF_ROOT/bin/tensorboard"
 alias tensorboard.log="$TF_ROOT/bin/tensorboard --logdir=./logs"
 ```
+
+Change `/Volumes/Soft/_Program_Files/tensorflow` with your path where directory you want to setup tensorflow on.
+
 3. Update with new bash_aliases content by restart terminal or just run `source ~/.bash_aliases`
 4. Create tensorflow workspace
 ```
